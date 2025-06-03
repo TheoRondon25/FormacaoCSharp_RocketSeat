@@ -34,3 +34,4 @@ C:\Projetos\Formacao_CSharp_RocketSeat\A_FormacaoCSharp\MyFirstApi\obj\Debug\net
 C:\Projetos\Formacao_CSharp_RocketSeat\A_FormacaoCSharp\MyFirstApi\obj\Debug\net8.0\MyFirstApi.pdb
 C:\Projetos\Formacao_CSharp_RocketSeat\A_FormacaoCSharp\MyFirstApi\obj\Debug\net8.0\MyFirstApi.genruntimeconfig.cache
 C:\Projetos\Formacao_CSharp_RocketSeat\A_FormacaoCSharp\MyFirstApi\obj\Debug\net8.0\ref\MyFirstApi.dll
+C:\Projetos\Formacao_CSharp_RocketSeat\A_FormacaoCSharp\MyFirstApi\obj\Debug\net8.0\MyFirstApi.sourcelink.json
