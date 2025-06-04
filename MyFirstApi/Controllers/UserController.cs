@@ -7,21 +7,7 @@ namespace MyFirstApi.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class UserController : ControllerBase
-{
-    [HttpGet]
-    [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
-    public IActionResult Get()
-    {
-        var response = new User
-        {            
-            Age = 7,
-            Name = "Theo"
-        };
-
-        return Ok(response);
-    }    
-    
+{    
     [HttpGet]
     [Route("{id}")] // passando valor pela rota
     [ProducesResponseType(typeof(User), StatusCodes.Status200OK)]
@@ -51,10 +37,9 @@ public class UserController : ControllerBase
         return Created(string.Empty, response);
     }
 
-    [HttpPut]
-    [Route("{id}")]
+    [HttpPut]    
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    public IActionResult Update([FromRoute] int id, [FromBody] RequestUpdateUserProfileJson request)
+    public IActionResult Update([FromBody] RequestUpdateUserProfileJson request)
     {
         return NoContent();
     }
@@ -62,6 +47,27 @@ public class UserController : ControllerBase
     [HttpDelete]    
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult Delete()
+    {
+        return NoContent();
+    }
+
+    [HttpGet]
+    [ProducesResponseType(typeof(List<User>), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(string), StatusCodes.Status400BadRequest)]
+    public IActionResult GetAll()
+    {
+        var response = new List<User>()
+        {
+            new User { Id = 1, Age = 7, Name = "Theo"},
+            new User { Id = 2, Age = 17, Name = "Taina"}
+        };
+
+        return Ok(response);
+    }
+
+    [HttpPut("change-password")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public IActionResult ChangePassword([FromBody] RequestChangePasswordJson request)
     {
         return NoContent();
     }
