@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/device": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/user/{id}": {
       "get": {
         "tags": [
@@ -63,46 +75,6 @@
             }
           }
         }
-      },
-      "put": {
-        "tags": [
-          "User"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RequestUpdateUserProfileJson"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RequestUpdateUserProfileJson"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RequestUpdateUserProfileJson"
-              }
-            }
-          }
-        },
-        "responses": {
-          "204": {
-            "description": "No Content"
-          }
-        }
       }
     },
     "/api/user": {
@@ -149,6 +121,35 @@
                 }
               }
             }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestUpdateUserProfileJson"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestUpdateUserProfileJson"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestUpdateUserProfileJson"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
           }
         }
       },

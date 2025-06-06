@@ -447,23 +447,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\theo.rondon\\.nuget\\packages\\": {},
+    "C:\\Users\\theop\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Formacao_CSharp_RocketSeat\\A_FormacaoCSharp\\MyFirstApi\\MyFirstApi.csproj",
+      "projectUniqueName": "C:\\Documentos\\PROJETOS_ESTUDO\\Formacao_Csharp_RocketSeat\\FormacaoCSharp_RocketSeat\\MyFirstApi\\MyFirstApi.csproj",
       "projectName": "MyFirstApi",
-      "projectPath": "C:\\Projetos\\Formacao_CSharp_RocketSeat\\A_FormacaoCSharp\\MyFirstApi\\MyFirstApi.csproj",
-      "packagesPath": "C:\\Users\\theo.rondon\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Formacao_CSharp_RocketSeat\\A_FormacaoCSharp\\MyFirstApi\\obj\\",
+      "projectPath": "C:\\Documentos\\PROJETOS_ESTUDO\\Formacao_Csharp_RocketSeat\\FormacaoCSharp_RocketSeat\\MyFirstApi\\MyFirstApi.csproj",
+      "packagesPath": "C:\\Users\\theop\\.nuget\\packages\\",
+      "outputPath": "C:\\Documentos\\PROJETOS_ESTUDO\\Formacao_Csharp_RocketSeat\\FormacaoCSharp_RocketSeat\\MyFirstApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\theo.rondon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\theop\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -521,7 +521,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

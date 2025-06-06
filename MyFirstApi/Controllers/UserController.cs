@@ -4,9 +4,9 @@ using MyFirstApi.Communication.Requests;
 using MyFirstApi.Communication.Responses;
 
 namespace MyFirstApi.Controllers;
-[Route("api/[controller]")]
-[ApiController]
-public class UserController : ControllerBase
+
+// herda de MyFirstApiBaseController para herdar as configurações do controller base
+public class UserController : MyFirstApiBaseController
 {    
     [HttpGet]
     [Route("{id}")] // passando valor pela rota
