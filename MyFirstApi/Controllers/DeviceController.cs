@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyFirstApi.Entities;
 
 namespace MyFirstApi.Controllers;
 
@@ -9,10 +10,13 @@ public class DeviceController : MyFirstApiBaseController
     [HttpGet]
     public IActionResult Get()
     {
-        Author = "Taina";
+        var laptop = new Laptop();
 
-        return Ok(Author);
+        var model = laptop.GetModel();
+
+        return Ok(model);
     }
+
 }
 
 
