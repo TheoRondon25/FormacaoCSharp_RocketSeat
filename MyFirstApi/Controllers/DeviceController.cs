@@ -10,11 +10,9 @@ public class DeviceController : MyFirstApiBaseController
     [HttpGet]
     public IActionResult Get()
     {
-        var laptop = new Laptop();
+        var key = GetCustomKey();
 
-        var model = laptop.GetBrand();
-
-        return Ok(model);
+        return Ok(key);
     }
 
 }
