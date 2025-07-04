@@ -1,0 +1,16 @@
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\bin\Debug\net8.0\Petfolio.Application.deps.json
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\bin\Debug\net8.0\Petfolio.Application.dll
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\bin\Debug\net8.0\Petfolio.Application.pdb
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\bin\Debug\net8.0\Petfolio.Communication.dll
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\bin\Debug\net8.0\Petfolio.Communication.pdb
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.csproj.AssemblyReference.cache
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.AssemblyInfoInputs.cache
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.AssemblyInfo.cs
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.csproj.CoreCompileInputs.cache
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.sourcelink.json
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.32F76676.Up2Date
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.dll
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\refint\Petfolio.Application.dll
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\Petfolio.Application.pdb
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Application\obj\Debug\net8.0\ref\Petfolio.Application.dll

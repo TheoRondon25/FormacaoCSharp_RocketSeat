@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Petfolio.API.Controllers.PetController",
+    "Method": "Register",
+    "RelativePath": "api/Pet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Petfolio.Communication.Requests.RequestRegisterPetJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Petfolio.Communication.Responses.ResponseRegisteredPetJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  }
+]

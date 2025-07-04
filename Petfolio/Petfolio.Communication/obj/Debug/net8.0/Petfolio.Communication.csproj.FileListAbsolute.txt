@@ -1,0 +1,12 @@
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\bin\Debug\net8.0\Petfolio.Communication.deps.json
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\bin\Debug\net8.0\Petfolio.Communication.dll
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\bin\Debug\net8.0\Petfolio.Communication.pdb
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\Petfolio.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\Petfolio.Communication.AssemblyInfoInputs.cache
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\Petfolio.Communication.AssemblyInfo.cs
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\Petfolio.Communication.csproj.CoreCompileInputs.cache
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\Petfolio.Communication.sourcelink.json
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\Petfolio.Communication.dll
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\refint\Petfolio.Communication.dll
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\Petfolio.Communication.pdb
+C:\Documentos\PROJETOS_ESTUDO\Formacao_Csharp_RocketSeat\FormacaoCSharp_RocketSeat\Petfolio\Petfolio.Communication\obj\Debug\net8.0\ref\Petfolio.Communication.dll
