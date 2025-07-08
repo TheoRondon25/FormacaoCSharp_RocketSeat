@@ -14,17 +14,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RequestRegisterPetJson"
+                "$ref": "#/components/schemas/RequestPetJson"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RequestRegisterPetJson"
+                "$ref": "#/components/schemas/RequestPetJson"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RequestRegisterPetJson"
+                "$ref": "#/components/schemas/RequestPetJson"
               }
             }
           }
@@ -52,6 +52,48 @@
           }
         }
       }
+    },
+    "/api/Pet/{id}": {
+      "put": {
+        "tags": [
+          "Pet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestPetJson"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestPetJson"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestPetJson"
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -64,7 +106,7 @@
         "type": "integer",
         "format": "int32"
       },
-      "RequestRegisterPetJson": {
+      "RequestPetJson": {
         "type": "object",
         "properties": {
           "name": {
