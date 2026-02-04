@@ -1,1 +1,9 @@
 ﻿.vs/
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+staticwebassets*
