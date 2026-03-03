@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "PkclhAZwv68=",
+  "dgSpecHash": "BTmHiVUqhyI=",
   "success": true,
   "projectFilePath": "C:\\Documentos\\PROJETOS_ESTUDO\\Formacao_Csharp_RocketSeat\\FormacaoCSharp_RocketSeat\\CashFlow\\src\\CashFlow.Infrastructure\\CashFlow.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.13\\microsoft.entityframeworkcore.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.13\\microsoft.entityframeworkcore.abstractions.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.13\\microsoft.entityframeworkcore.analyzers.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0\\microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.13\\microsoft.extensions.caching.abstractions.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.13\\microsoft.extensions.caching.memory.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0\\microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.13\\microsoft.extensions.dependencyinjection.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.13\\microsoft.extensions.dependencyinjection.abstractions.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.logging\\9.0.13\\microsoft.extensions.logging.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.13\\microsoft.extensions.logging.abstractions.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.options\\9.0.13\\microsoft.extensions.options.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.13\\microsoft.extensions.primitives.9.0.13.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
+    "C:\\Users\\theop\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.13\\system.diagnostics.diagnosticsource.9.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
