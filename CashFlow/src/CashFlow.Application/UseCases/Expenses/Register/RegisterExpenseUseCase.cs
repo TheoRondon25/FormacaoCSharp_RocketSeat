@@ -2,17 +2,20 @@
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
 using CashFlow.Domain.Entities;
+using CashFlow.Domain.Repositories;
 using CashFlow.Domain.Repositories.Expenses;
 using CashFlow.Exception.ExceptionBase;
 
 namespace CashFlow.Application.UseCases.Expenses.Register;
 public class RegisterExpenseUseCase : IRegisterExpenseUseCase
 {
-    private readonly IExpensesRepository _repository;
+    private readonly IExpensesRepository _repository; // para adicionar a entidade no banco 
+    private readonly IUnitOfWork _unitOfWork; // para dar o saveChanges no banco
 
-    public RegisterExpenseUseCase(IExpensesRepository repository)
+    public RegisterExpenseUseCase(IExpensesRepository repository, IUnitOfWork unitOfWork)
     {
         _repository = repository;
+        _unitOfWork = unitOfWork;
     }
 
     public ResponseRegisteredExpenseJson Execute(RequestRegisterExpenseJson request)
@@ -29,6 +32,8 @@ public class RegisterExpenseUseCase : IRegisterExpenseUseCase
         };
 
         _repository.Add(entity);
+
+        _unitOfWork.Commit(); // SaveChanges no banco
 
         return new ResponseRegisteredExpenseJson();
     }
