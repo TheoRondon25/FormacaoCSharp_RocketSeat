@@ -1,4 +1,5 @@
-﻿using CashFlow.Communication.Enums;
+﻿using AutoMapper;
+using CashFlow.Communication.Enums;
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
 using CashFlow.Domain.Entities;
@@ -11,31 +12,26 @@ public class RegisterExpenseUseCase : IRegisterExpenseUseCase
 {
     private readonly IExpensesRepository _repository; // para adicionar a entidade no banco 
     private readonly IUnitOfWork _unitOfWork; // para dar o saveChanges no banco
+    private readonly IMapper _mapper; // para mapear os objetos, caso seja necessário, por exemplo, se a entidade tiver mais propriedades do que o request, ou se o request tiver propriedades que não existem na entidade, etc. 
 
-    public RegisterExpenseUseCase(IExpensesRepository repository, IUnitOfWork unitOfWork)
+    public RegisterExpenseUseCase(IExpensesRepository repository, IUnitOfWork unitOfWork, IMapper mapper)
     {
         _repository = repository;
         _unitOfWork = unitOfWork;
+        _mapper = mapper;
     }
 
     public async Task<ResponseRegisteredExpenseJson> Execute(RequestRegisterExpenseJson request)
     {
-        Validate(request);        
+        Validate(request);
 
-        var entity = new Expense
-        {
-            Amount = request.Amount,
-            Date = request.Date,
-            Description = request.Description,
-            Title = request.Title,
-            PaymentType = (Domain.Enums.PaymentType)request.PaymentType,
-        };
+        var entity = _mapper.Map<Expense>(request);
 
         await _repository.Add(entity);
 
         await _unitOfWork.Commit(); // SaveChanges no banco
 
-        return new ResponseRegisteredExpenseJson();
+        return _mapper.Map<ResponseRegisteredExpenseJson>(entity);
     }
 
     private void Validate(RequestRegisterExpenseJson request)
