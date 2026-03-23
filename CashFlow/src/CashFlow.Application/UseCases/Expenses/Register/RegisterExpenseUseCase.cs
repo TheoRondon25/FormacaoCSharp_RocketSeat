@@ -10,11 +10,11 @@ using CashFlow.Exception.ExceptionBase;
 namespace CashFlow.Application.UseCases.Expenses.Register;
 public class RegisterExpenseUseCase : IRegisterExpenseUseCase
 {
-    private readonly IExpensesRepository _repository; // para adicionar a entidade no banco 
+    private readonly IExpensesWriteOnlyRepository _repository; // para adicionar a entidade no banco 
     private readonly IUnitOfWork _unitOfWork; // para dar o saveChanges no banco
     private readonly IMapper _mapper; // para mapear os objetos, caso seja necessário, por exemplo, se a entidade tiver mais propriedades do que o request, ou se o request tiver propriedades que não existem na entidade, etc. 
 
-    public RegisterExpenseUseCase(IExpensesRepository repository, IUnitOfWork unitOfWork, IMapper mapper)
+    public RegisterExpenseUseCase(IExpensesWriteOnlyRepository repository, IUnitOfWork unitOfWork, IMapper mapper)
     {
         _repository = repository;
         _unitOfWork = unitOfWork;
