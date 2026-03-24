@@ -21,7 +21,7 @@ public class RegisterExpenseUseCase : IRegisterExpenseUseCase
         _mapper = mapper;
     }
 
-    public async Task<ResponseRegisteredExpenseJson> Execute(RequestRegisterExpenseJson request)
+    public async Task<ResponseRegisteredExpenseJson> Execute(RequestExpenseJson request)
     {
         Validate(request);
 
@@ -34,7 +34,7 @@ public class RegisterExpenseUseCase : IRegisterExpenseUseCase
         return _mapper.Map<ResponseRegisteredExpenseJson>(entity);
     }
 
-    private void Validate(RequestRegisterExpenseJson request)
+    private void Validate(RequestExpenseJson request)
     {
         var validator = new RegisterExpenseValidator();
 
