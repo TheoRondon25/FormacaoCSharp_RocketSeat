@@ -7,6 +7,7 @@ using CashFlow.Application.UseCases.Expenses.Reports.Pdf.Fonts;
 using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
 using MigraDoc.DocumentObjectModel;
+using MigraDoc.Rendering;
 using PdfSharp.Fonts;
 
 namespace CashFlow.Application.UseCases.Expenses.Reports.Pdf;
@@ -25,7 +26,7 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
     public async Task<byte[]> Execute(DateOnly month)
     {
         var expenses = await _repository.FilterByMonth(month);
-        if(expenses.Count == 0)
+        if (expenses.Count == 0)
         {
             return [];
         }
@@ -33,7 +34,17 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         var document = CreateDocument(month);
         var page = CreatePage(document);
 
-        return [];
+        var paragraph = page.AddParagraph();
+        var title = string.Format(ResourceReportGenerationMessages.TOTAL_SPENT_IN, month.ToString("Y"));
+
+        paragraph.AddFormattedText(title, new Font { Name = FontHelper.RALEWAY_REGULAR, Size = 15 });
+
+        paragraph.AddLineBreak();
+
+        var totalExpenses = expenses.Sum(expense => expense.Amount);
+        paragraph.AddFormattedText($"{CURRENCY_SYMBOL} {totalExpenses}", new Font { Name = FontHelper.WORKSANS_BLACK, Size = 50 });
+
+        return RenderDocument(document);
     }
 
     private Document CreateDocument(DateOnly month)
@@ -61,5 +72,20 @@ public class GenerateExpensesReportPdfUseCase : IGenerateExpensesReportPdfUseCas
         section.PageSetup.BottomMargin = 80;
 
         return section;
+    }
+
+    private byte[] RenderDocument(Document document)
+    {
+        var renderer = new PdfDocumentRenderer
+        {
+            Document = document,
+        };
+
+        renderer.RenderDocument();
+
+        using var file = new MemoryStream();
+        renderer.PdfDocument.Save(file);
+
+        return file.ToArray();
     }
 }
