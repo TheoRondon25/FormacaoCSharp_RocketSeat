@@ -34,4 +34,10 @@
     <ProjectReference Include="..\CashFlow.Exception\CashFlow.Exception.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Logo\perfil_menor.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
