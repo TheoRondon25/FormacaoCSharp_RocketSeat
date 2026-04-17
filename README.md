@@ -21,6 +21,7 @@ Exemplos de organização:
 * Cada pasta é **independente**
 * Pode conter um ou mais projetos
 * Reflete exatamente o conteúdo estudado naquele módulo
+* Todos os projetos adotam os príncipios do **Domain-Driven Design (DDD)**
 
 ---
 
@@ -33,7 +34,7 @@ Este repositório tem como objetivo:
 * Demonstrar evolução técnica ao longo do tempo
 * Manter um histórico real de aprendizado (commits, refactors e melhorias)
 
-👉 **Não serão criados novos repositórios para projetos da formação.**
+👉 **Não serão criados novos repositórios para projetos da formação**.</br>
 👉 Projetos em repositórios separados existirão **apenas para projetos práticos, desafios ou exercícios independentes**.
 
 ---
@@ -46,6 +47,7 @@ Ao longo da formação, este repositório pode conter exemplos práticos de:
 * APIs REST
 * Orientação a Objetos
 * Boas práticas de código
+* Domain-Driven Design (DDD)
 * Clean Code
 * SOLID
 * Integração com banco de dados
@@ -68,10 +70,10 @@ Isso faz parte do processo 🚀
 
 ## 👨‍💻 Autor
 
-**Théo Rondon**
+**Théo Rondon**</br>
 Desenvolvedor Full-Stack
 
-📌 Formação C# — Rocketseat
+📌 Formação C# .Net — Rocketseat
 
 ---
 
